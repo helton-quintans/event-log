@@ -15,7 +15,6 @@ import { useDropzone } from "react-dropzone";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { eventSchema } from "@/lib/validations/event";
-import "react-datepicker/dist/react-datepicker.css";
 import InputMask from 'react-input-mask';
 
 type FormData = z.infer<typeof eventSchema>;
