@@ -25,12 +25,6 @@ function EditEventForm({ item, id }: { item: Event; id: string }) {
 
   const [imageUpload, setImageUpload] = useState<File | null>(null);
   const [isSaving, setIsSaving] = useState(false);
-  const [date, setDate] = useState<string>('');
-
-  // const handleDateChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-  //   const selectedDate = e.target.value;
-  //   setDate(selectedDate);
-  // }
 
   const router = useRouter();
 
@@ -110,14 +104,13 @@ function EditEventForm({ item, id }: { item: Event; id: string }) {
         error: <b>Could not be updated. Try again.</b>,
       });
 
-      router.push('/events');
       
     } catch (error) {
       toast.error("Could not be updated. Try again.");
     } finally {
       setIsSaving(false); // Re-enable the button
     }
-
+    
     router.refresh();
   };
 
@@ -189,7 +182,6 @@ function EditEventForm({ item, id }: { item: Event; id: string }) {
                 type="text" 
                 name="event_date" 
                 id="date" 
-                // onChange={handleDateChange}
                 className="border dark:text-white border-input rounded-md px-3 py-2 focus:outline-none focus:ring dark:border-secondary dark:bg-secondary"
               />
             
