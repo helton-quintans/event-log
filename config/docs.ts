@@ -7,11 +7,11 @@ export const docsConfig: DocsConfig = {
       href: "/",
     },
     {
-      title: "View Events",
+      title: "Events View",
       href: "/events",
     },
     {
-      title: "Dashboard",
+      title: "Manage Events",
       href: "/dashboard/store",
     },
     {
