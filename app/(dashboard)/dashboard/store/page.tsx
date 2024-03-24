@@ -56,7 +56,7 @@ async function DashboardStore({ searchParams: { page = "1" } }: PageProps) {
     <>
       <div className="pb-2">
         <h1 className="text-primary dark:text-white text-3xl font-bold pb-1">
-          Events dahboard
+          Events dashboard
         </h1>
         <p className="text-base text-gray-600 dark:text-gray-400">
           Manage your events
