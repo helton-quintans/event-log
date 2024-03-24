@@ -7,7 +7,7 @@ import toast from "react-hot-toast";
 import { Icons } from "@/components/Icons";
 import { Button } from "@/components/ui/Button";
 import { db, storage } from "@/firebase/config";
-import { cn, getCurrentDateTime } from "@/lib/utils";
+import { getCurrentDateTime } from "@/lib/utils";
 import { addDoc, collection } from "firebase/firestore";
 import { getDownloadURL, ref, uploadBytes } from "firebase/storage";
 import { useState } from "react";
@@ -15,7 +15,6 @@ import { useDropzone } from "react-dropzone";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { eventSchema } from "@/lib/validations/event";
-import "react-datepicker/dist/react-datepicker.css";
 import InputMask from 'react-input-mask';
 
 type FormData = z.infer<typeof eventSchema>;
