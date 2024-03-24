@@ -1,8 +1,10 @@
 import { Event } from "@/types";
 
 export async function getEvents() {
+  const baseUrl = process.env.BASE_URL || "http://localhost:3000";
+
   try {
-    const res = await fetch(`${process.env.BASE_URL}/api/events`, {
+    const res = await fetch(`${baseUrl}/api/events`, {
       next: { revalidate: 0 },
     });
 
@@ -15,8 +17,10 @@ export async function getEvents() {
 }
 
 export async function getEvent(id: string) {
+  const baseUrl = process.env.BASE_URL || "http://localhost:3000";
+
   try {
-    const res = await fetch(`${process.env.BASE_URL}/api/events/${id}`, {
+    const res = await fetch(`${baseUrl}/api/events/${id}`, {
       next: { revalidate: 0 },
     });
 
@@ -31,8 +35,10 @@ export async function getEvent(id: string) {
 }
 
 export async function getSearchEvents(query: string) {
+  const baseUrl = process.env.BASE_URL || "http://localhost:3000";
+
   const searchResponse = await fetch(
-    `${process.env.BASE_URL}/api/events/search?q=${query}`,
+    `${baseUrl}/api/events/search?q=${query}`,
     {
       next: { revalidate: 0 },
     }
@@ -46,8 +52,11 @@ export async function getSearchEvents(query: string) {
 }
 
 export async function getFilteredEvents(query: string) {
+  const baseUrl = process.env.BASE_URL || "http://localhost:3000";
+
+  
   const filterResponse = await fetch(
-    `${process.env.BASE_URL}/api/events/search?sort_by=${query}`,
+    `${baseUrl}/api/events/search?sort_by=${query}`,
     {
       next: { revalidate: 0 },
     }
@@ -61,8 +70,10 @@ export async function getFilteredEvents(query: string) {
 }
 
 export async function getCategoryEvents(query: string) {
+  const baseUrl = process.env.BASE_URL || "http://localhost:3000";
+
   const categoryResponse = await fetch(
-    `${process.env.BASE_URL}/api/events/filter?category=${query}`,
+    `${baseUrl}/api/events/filter?category=${query}`,
     {
       next: { revalidate: 0 },
     }
