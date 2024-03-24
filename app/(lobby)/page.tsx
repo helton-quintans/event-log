@@ -13,7 +13,7 @@ export default async function Home() {
     <div>
       <Hero />
       {/* Featured Events */}
-      <section className="py-28 px-4 sm:px-8 lg:px-20 dark:bg-secondary">
+      <section className="lg:py-28 sm:py-16 px-4 sm:px-8 lg:px-20 dark:bg-secondary">
         <h2 className="capitalize text-primary dark:text-white text-3xl font-semibold text-center pb-4">
           Featured events
         </h2>
