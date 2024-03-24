@@ -194,7 +194,7 @@ function NewEvent() {
               <InputMask 
                 {...register("event_date")} 
                 mask="99/99/9999" 
-                placeholder="MM/DD/yyyy"
+                placeholder="MM/DD/YYYY"
                 type="text" 
                 name="event_date" 
                 id="date" 
