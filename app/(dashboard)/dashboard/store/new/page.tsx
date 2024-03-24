@@ -120,10 +120,7 @@ function NewEvent() {
     // Resets
     acceptedFiles.length = 0;
     setImageUpload(null);
-
-    // we need fresh data :D
     router.refresh();
-    // come from react-hook-form
     reset();
   };
 

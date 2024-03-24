@@ -32,9 +32,6 @@ const buttonVariants = cva(
     },
   }
 );
-// interface ButtonProps
-//   extends ButtonHTMLAttributes<HTMLButtonElement>,
-//     VariantProps<typeof buttonVariants> {}
 
 type ButtonProps = ComponentPropsWithRef<"button"> &
   VariantProps<typeof buttonVariants>;

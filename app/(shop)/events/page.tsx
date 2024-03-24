@@ -24,8 +24,6 @@ type PageProps = {
 async function EventsPage({
   searchParams: { page = "1", q, sort_by, categories },
 }: PageProps) {
-  // destructuring
-  // const { q, sort_by, categories } = searchParams;
 
   const currentPage = parseInt(page);
   const pageSize = 6;

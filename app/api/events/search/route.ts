@@ -31,23 +31,12 @@ export async function GET(request: Request) {
   let sortQuery;
   switch (sortBy) {
     case SortingCondition.Ascending:
-    //   sortQuery = query(eventCollectionRef, orderBy("event_name", "asc"));
-    //   break;
-    // case SortingCondition.Descending:
-    //   sortQuery = query(eventCollectionRef, orderBy("event_name", "desc"));
-    //   break;
     case SortingCondition.Oldest:
       sortQuery = query(eventCollectionRef, orderBy("created_at", "asc"));
       break;
     case SortingCondition.Newest:
       sortQuery = query(eventCollectionRef, orderBy("created_at", "desc"));
       break;
-    // case SortingCondition.LowestPrice:
-    //   sortQuery = query(eventCollectionRef, orderBy("event_date", "asc"));
-    //   break;
-    // case SortingCondition.HighestPrice:
-    //   sortQuery = query(eventCollectionRef, orderBy("event_date", "desc"));
-    //   break;
     default:
       sortQuery = query(eventCollectionRef); // Default query
       break;

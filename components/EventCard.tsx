@@ -7,7 +7,6 @@ import { cn, truncateText } from "@/lib/utils";
 import Link from "next/link";
 import { Icons } from "./Icons";
 import moment from "moment";
-// import AddToCart from "./AddToCart";
 
 function EventCard({ item }: { item: Event }) {
 

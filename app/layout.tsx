@@ -27,8 +27,7 @@ export default function RootLayout({
       <body className={openSans.className}>
         <Providers>
           <Header />
-          <main className="min-h-screen bg-custom-background bg-center bg-cover mx-auto max-w-7xl bg-[url('/images/home-bg.png')]" style={{backgroundImage: 'url("/images/home-bg.png")', backgroundSize: 'cover'}}>
-          {/* // className="min-h-screen bg-white dark:bg-secondary mx-auto max-w-7xl" */}
+          <main className="min-h-screen bg-white dark:bg-secondary mx-auto max-w-7xl">
             {children}
             <Analytics />
           </main>

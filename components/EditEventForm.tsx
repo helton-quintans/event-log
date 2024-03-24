@@ -27,11 +27,6 @@ function EditEventForm({ item, id }: { item: Event; id: string }) {
   const [isSaving, setIsSaving] = useState(false);
   const [date, setDate] = useState<string>('');
 
-  // const handleDateChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-  //   const selectedDate = e.target.value;
-  //   setDate(selectedDate);
-  // }
-
   const router = useRouter();
 
   const {

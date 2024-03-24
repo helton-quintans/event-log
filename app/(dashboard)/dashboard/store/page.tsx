@@ -52,8 +52,6 @@ async function DashboardStore({ searchParams: { page = "1" } }: PageProps) {
     events.push({ ...eventData, id: eventId }); // Assign the ID to the event
   });
 
-  // if (!events) return null;
-
   return (
     <>
       <div className="pb-2">
