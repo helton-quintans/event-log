@@ -12,7 +12,7 @@ Project built with the new Next.js App Router, React 18, TypeScript, Tailwind an
   [![Events Dashbord](./public/images/event-log-screen.png)](https://pierce-event-log.vercel.app/)
   [![Events Dashbord](./public/images/event-log-table-screen.png)](https://pierce-event-log.vercel.app/)
   [![Events Dashbord](./public/images/event-log-tech-stack-screen.png)](https://pierce-event-log.vercel.app/)
-  [![Events Dashbord](./public/images/event-log-event-log-global-search-screen.png)](https://pierce-event-log.vercel.app/)
+  [![Events Dashbord](./public/images/event-log-global-search-screen.png)](https://pierce-event-log.vercel.app/)
   
 
 </details>
