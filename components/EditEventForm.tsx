@@ -25,7 +25,6 @@ function EditEventForm({ item, id }: { item: Event; id: string }) {
 
   const [imageUpload, setImageUpload] = useState<File | null>(null);
   const [isSaving, setIsSaving] = useState(false);
-  const [date, setDate] = useState<string>('');
 
   const router = useRouter();
 
@@ -164,6 +163,7 @@ function EditEventForm({ item, id }: { item: Event; id: string }) {
             <span className="text-sm font-medium text-red-600 mt-1">
               {errors.description.message}
             </span>
+            
           )}
         </div>
 
@@ -184,13 +184,12 @@ function EditEventForm({ item, id }: { item: Event; id: string }) {
                 type="text" 
                 name="event_date" 
                 id="date" 
-                // onChange={handleDateChange}
                 className="border dark:text-white border-input rounded-md px-3 py-2 focus:outline-none focus:ring dark:border-secondary dark:bg-secondary"
               />
             
             {errors.event_date && (
               <span className="text-sm font-medium text-red-600 mt-1">
-                Must be a valid date
+                Invalid date format. Please use MM/DD/YYYY.
               </span>
             )}
           </div>

@@ -1,12 +1,12 @@
 "use client";
 
 import Image from "next/image";
-import { buttonVariants } from "./ui/Button";
 import { Event } from "@/types";
-import { cn, truncateText } from "@/lib/utils";
+import { truncateText } from "@/lib/utils";
 import Link from "next/link";
 import { Icons } from "./Icons";
 import moment from "moment";
+import ActionsMenu from "./ActionsMenu";
 
 function EventCard({ item }: { item: Event }) {
 
@@ -44,14 +44,7 @@ function EventCard({ item }: { item: Event }) {
       </Link>
 
       <div className="p-4 flex justify-center gap-4">
-        <Link
-          href={`event/${item.id}`}
-          className={cn(
-            buttonVariants({ variant: "outline" }) + "px-5 h-8 py-0 text-sm"
-          )}
-        >
-          Preview
-        </Link>
+         <ActionsMenu itemId={item.id as string} />
       </div>
     </div>
   );

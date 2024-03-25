@@ -9,10 +9,13 @@ export const eventSchema = z.object({
     .max(30, { message: "Must be at most 30 characters" }),
   description: z
     .string()
-    .max(200, { message: "Must be at most 200 characters" })
-    .optional(),
+    .min(8, { message: "Must have a description" })
+    .max(200, { message: "Must be at most 200 characters" }),
   event_priority: z.string(),
-  event_date: z.string().regex(dateFormatRegex, {
+  event_date: z
+    .string()
+    .min(1, { message: "Must have a date, Please use MM/DD/YYYY." })
+    .regex(dateFormatRegex, {
     message: "Invalid date format. Please use MM/DD/YYYY."
   }),
 })
