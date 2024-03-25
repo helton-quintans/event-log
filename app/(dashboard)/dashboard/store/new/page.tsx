@@ -1,7 +1,7 @@
 "use client";
 
 import { z } from "zod";
-import { Controller, SubmitHandler, useForm } from "react-hook-form";
+import { SubmitHandler, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import toast from "react-hot-toast";
 import { Icons } from "@/components/Icons";
@@ -38,8 +38,6 @@ function NewEvent() {
     reset,
     register,
     handleSubmit,
-    setValue,
-    control,
     formState: { errors },
   } = useForm<FormData>({
     resolver: zodResolver(eventSchema),
@@ -204,7 +202,7 @@ function NewEvent() {
             
             {errors.event_date && (
               <span className="text-sm font-medium text-red-600 mt-1">
-                Must be a valid date
+                Invalid date format. Please use MM/DD/YYYY.
               </span>
             )}
           </div>
