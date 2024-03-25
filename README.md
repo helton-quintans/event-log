@@ -4,8 +4,8 @@
 Project built with the new Next.js App Router, React 18, TypeScript, Tailwind and Firebase.
 
 [![Event Log](./public/images/event-log-screens.png)](https://pierce-event-log.vercel.app/)
- [![Events Dashbord](./public/images/event-log-full-responsive.png)](https://pierce-event-log.vercel.app/)
-s
+[![Events Dashbord](./public/images/event-log-full-responsive.png)](https://pierce-event-log.vercel.app/)
+
 <details>
   <summary>See more screens here</summary>
   
