@@ -5,14 +5,15 @@ Project built with the new Next.js App Router, React 18, TypeScript, Tailwind an
 
 [![Event Log](./public/images/event-log-screens.png)](https://pierce-event-log.vercel.app/)
  [![Events Dashbord](./public/images/event-log-full-responsive.png)](https://pierce-event-log.vercel.app/)
-
+s
 <details>
   <summary>See more screens here</summary>
   
-  [![Events Dashbord](./public/images/event-screen.png)](https://pierce-event-log.vercel.app/)
+  [![Events Dashbord](./public/images/event-log-screen.png)](https://pierce-event-log.vercel.app/)
   [![Events Dashbord](./public/images/event-log-table-screen.png)](https://pierce-event-log.vercel.app/)
-  [![Events Dashbord](./public/images/event-tech-stack-screen.png)](https://pierce-event-log.vercel.app/)
-  [![Events Dashbord](./public/images/event-log-table-screen.png)](https://pierce-event-log.vercel.app/)
+  [![Events Dashbord](./public/images/event-log-tech-stack-screen.png)](https://pierce-event-log.vercel.app/)
+  [![Events Dashbord](./public/images/event-log-event-log-global-search-screen.png)](https://pierce-event-log.vercel.app/)
+  
 
 </details>
 
