@@ -63,3 +63,7 @@ cp .env.example .env
 ```bash
 pnpm run dev
 ```
+
+## Acknowledgements
+
+- Skateshop13 [Skateshop13 repository](https://github.com/sadmann7/skateshop) for design inspirations
